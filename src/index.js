@@ -1,6 +1,7 @@
 import 'dotenv/config';
 import express from 'express';
 import http from 'http';
+import cors from 'cors';
 import { ApolloServer } from 'apollo-server-express';
 import { ApolloServerPluginLandingPageLocalDefault } from 'apollo-server-core';
 import { makeExecutableSchema } from '@graphql-tools/schema';
@@ -15,6 +16,8 @@ import Languages from './data/languages.json';
 const main = async () => {
     const PORT = process.env.PORT || 4000;
     const app = express();
+    app.use(cors());
+    app.use(express.json());
     const httpServer = http.createServer(app);
     const graphqlSchema = makeExecutableSchema({
         typeDefs: typeDefs,
