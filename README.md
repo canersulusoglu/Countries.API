@@ -1,5 +1,12 @@
 # Countries API
 
+<p align="center">
+  View Deployment on 
+  <a href="https://countries-graphql-api.herokuapp.com/" target="_blank">
+    <img align="center" src="https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white">
+  </a>
+</p>
+
 This API includes continents, countries, languages informations and each have relation with other types.
 - Developed using GraphQL.
 - You can access all data with these files:
