@@ -9,8 +9,8 @@ This API includes continents, countries, languages informations and each have re
 
 ### Environment Variables
 
-```json
-  PORT=4000
+```sh
+PORT=4000
 ```
 
 ### Commands
