@@ -25,6 +25,7 @@ const main = async () => {
     });
     const apolloServer = new ApolloServer({
         schema: graphqlSchema,
+        introspection: true,
         plugins: [
             ApolloServerPluginLandingPageLocalDefault({ embed: true }),
         ],
